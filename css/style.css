@@ -24,6 +24,7 @@ header {
 header a {
     color: #fff;
     text-decoration: none;
+    vertical-align: middle;
 }
 
 header p {
@@ -33,24 +34,24 @@ header p {
 /* Navbar */
 .navbar {
     display: flex;
-    background-color: blueviolet;
     justify-content: space-between;
+    background-color: blueviolet;
     line-height: 35px;
+    height: 35px;
 }
 
 /* Link navbar */
 .links {
-    list-style-type: none;
     display: flex;
-    min-width: 42%;
     justify-content: space-between;
+    list-style-type: none;
+    min-width: 42%;
 }
 
 /* Bottone accedi */
-.login-button {
+.login-button a {
     background-color: #fff;
-    padding: 0 15px;
-    height: 35px;
+    padding: 10px 15px;
     border-radius: 50px;
     font-size: 15px;
 }
@@ -90,14 +91,21 @@ header p {
 
 /* Sezioni - contenuto principale */
 .main-section > .container {
-    min-height: 60px;
     display: flex;
     justify-content: center;
 }
 
+.main-section .container > div {
+    width: 50%;
+    padding: 10px;
+}
+
+.main-section:nth-child(even) > .container {
+    flex-direction: row-reverse;
+}
+
 .main-section:nth-child(even) {
     background-color: #F6F6F6;
-    flex-direction: row-reverse;
 }
 
 /* Footer */
@@ -106,3 +114,26 @@ footer {
     background-color: #23272A;
     color: #fff;
 }
+
+footer a {
+    text-decoration: none;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+.left-footer {
+    width: 25%; 
+}
+
+.right-footer {
+    justify-content: space-between;
+    width: 75%; 
+}
+
+.top-footer, .right-footer {
+    display: flex;
+}
+
+
