@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    min-height: 100px;
+    background-color: #255EE9;
+    color: #fff;
+}
+
+nav {
+    background-color: blueviolet;
+}
+
+section:nth-child(even) {
+    background-color: #F6F6F6;
+}
+
+.main-section {
+    min-height: 60px;
+}
+
+footer {
+    height: 80px;
+    background-color: #23272A;
+    color: #fff;
+}
