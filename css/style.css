@@ -69,24 +69,29 @@ header p {
 }
 
 /* Bottoni parte centrale header */
+.header-buttons {
+    height: 39px; 
+    line-height: 39px;
+}
 .header-buttons a {
     padding: 10px 15px;
     border-radius: 50px;
     font-size: 18px;
 }
 
-.download-btn {
-    background-color: #fff;
+.download-button {
+    background-color: #fff; 
     color: #271E19;
 }
 
-.download-btn:before {
+.download-button:before, .main-section .button a:before {
     content: '\01F807';
     padding: 0 2px;
+    vertical-align: middle;
 }
 
-.discord-btn {
-    background-color: #23272A;
+.discord-button {
+    background-color: #23272A; 
 }
 
 /* Sezioni - contenuto principale */
@@ -119,16 +124,22 @@ header p {
     background-color: #F6F6F6;
 }
 
+.main-section a {
+    text-decoration: none;
+}
+
 /* Footer */
 footer {
     min-height: 80px;
     background-color: #23272A;
     color: #fff;
     padding: 15px 0;
+    color: #7186D0;
 }
 
 footer a {
     text-decoration: none;
+    color: #fff;
 }
 
 footer ul {
@@ -138,4 +149,25 @@ footer ul {
 .top-footer, .bottom-footer {
     display: flex;
     justify-content: space-between;
+    padding: 10px 0;
+}
+
+.bottom-footer {
+    border-top: solid 1px #4C5984;
+}
+
+.button {
+    height: 40px;
+    line-height: 40px;
+}
+
+.button a {
+    background-color: #7289DA;
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+.lang {
+    color: #fff;
 }
