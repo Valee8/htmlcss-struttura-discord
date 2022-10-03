@@ -8,17 +8,17 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header */
 header {
     min-height: 100px;
     background-color: #255EE9;
     color: #fff;
-}
-
-.main-header {
-    text-align: center;
-    width: 50%;
-    margin: 0 auto;
-    padding: 30px 0;
 }
 
 header a {
@@ -30,6 +30,7 @@ header p {
     padding: 15px 0;
 }
 
+/* Navbar */
 .navbar {
     display: flex;
     background-color: blueviolet;
@@ -37,6 +38,15 @@ header p {
     line-height: 35px;
 }
 
+/* Link navbar */
+.links {
+    list-style-type: none;
+    display: flex;
+    min-width: 42%;
+    justify-content: space-between;
+}
+
+/* Bottone accedi */
 .login-button {
     background-color: #fff;
     padding: 0 15px;
@@ -49,18 +59,15 @@ header p {
     color: #271E19;
 }
 
-.container {
-    width: 80%;
+/* Contenuto header */
+.main-header {
+    text-align: center;
+    width: 50%;
     margin: 0 auto;
+    padding: 30px 0;
 }
 
-.links {
-    list-style-type: none;
-    display: flex;
-    min-width: 42%;
-    justify-content: space-between;
-}
-
+/* Bottoni parte centrale header */
 .header-buttons a {
     padding: 10px 15px;
     border-radius: 50px;
@@ -81,7 +88,7 @@ header p {
     background-color: #23272A;
 }
 
-
+/* Sezioni - contenuto principale */
 .main-section {
     min-height: 60px;
     display: flex;
@@ -93,7 +100,7 @@ header p {
     flex-direction: row-reverse;
 }
 
-
+/* Footer */
 footer {
     min-height: 80px;
     background-color: #23272A;
