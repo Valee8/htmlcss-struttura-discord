@@ -41,12 +41,16 @@ header p {
 }
 
 /* Link navbar */
-.links {
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
+.header-links {
     min-width: 42%;
 }
+
+.header-links ul {
+    display: flex;
+    list-style-type: none; 
+    justify-content: space-between;
+}
+
 
 /* Bottone accedi */
 .login-button a {
@@ -68,32 +72,6 @@ header p {
     padding: 30px 0;
 }
 
-/* Bottoni parte centrale header */
-.header-buttons {
-    height: 39px; 
-    line-height: 39px;
-}
-.header-buttons a {
-    padding: 10px 15px;
-    border-radius: 50px;
-    font-size: 18px;
-}
-
-.download-button {
-    background-color: #fff; 
-    color: #271E19;
-}
-
-.download-button:before, .main-section .button a:before {
-    content: '\01F807';
-    padding: 0 2px;
-    vertical-align: middle;
-}
-
-.discord-button {
-    background-color: #23272A; 
-}
-
 /* Sezioni - contenuto principale */
 .main-section > .container:not(.not-flex) {
     display: flex;
@@ -105,7 +83,7 @@ header p {
 }
 
 .main-section > .container {
-    padding: 10px;
+    padding: 10px 20px;
 }
 
 .main-section > .container.not-flex p {
@@ -150,6 +128,16 @@ footer ul {
     display: flex;
     justify-content: space-between;
     padding: 10px 0;
+}
+
+.social-links {
+    width: 20%;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
 }
 
 .bottom-footer {
